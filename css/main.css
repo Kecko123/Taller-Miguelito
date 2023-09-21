@@ -1,0 +1,225 @@
+@import url("https://fonts.googleapis.com/css2?family=Dai+Banna+SIL:wght@600&family=Open+Sans&family=Roboto:wght@300&family=Rubik&display=swap");
+.font-openSans {
+  font-family: "Open Sans", sans-serif;
+}
+
+.font-roboto, .font-robotoBold {
+  font-family: "Roboto", sans-serif;
+}
+
+.font-daiBanna {
+  font-family: "Dai Banna SIL", sans-serif;
+}
+
+.font-rubik {
+  font-family: "Rubik", sans-serif;
+}
+
+.font-robotoBold {
+  font-weight: bold;
+}
+
+@keyframes rotacion360grados {
+  0% {
+    transform: rotateZ(-360deg) scale(120%);
+  }
+}
+.logo {
+  width: 80px;
+}
+.logo:hover {
+  transform: rotateZ(-360deg);
+  transition: all 1s;
+  animation-duration: 1s;
+}
+
+header {
+  background-image: linear-gradient(90deg, rgb(107, 75, 62) 0%, rgb(196, 158, 133) 100%);
+  border-bottom: 2px black solid;
+}
+header .nav-link {
+  color: rgb(22, 22, 22);
+  position: relative;
+  font-family: "Roboto", sans-serif;
+}
+header .nav-link::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  border-radius: 4px;
+  background-color: rgb(22, 22, 22);
+  bottom: 0;
+  left: 0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+header .nav-link:hover {
+  transform: scale(105%);
+  transition: all 0.5s;
+}
+header .nav-link:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+
+.headerH1 {
+  font-size: 2.2em;
+}
+.headerH1:hover {
+  transform: scale(110%);
+  transition: all 0.5s;
+}
+
+body {
+  background-image: linear-gradient(90deg, rgb(121, 96, 85) 0%, rgb(200, 176, 160) 100%);
+}
+
+a {
+  text-decoration: none;
+}
+
+.carousel {
+  margin: 3rem inherit 3rem inherit;
+  padding: 0;
+}
+.carouselSombra {
+  box-shadow: 0px 0px 25px 6px rgba(0, 0, 0, 0.64);
+  -webkit-box-shadow: 0px 0px 25px 6px rgba(0, 0, 0, 0.64);
+  -moz-box-shadow: 0px 0px 25px 6px rgba(0, 0, 0, 0.64);
+}
+.carouselFlechas {
+  color: rgb(22, 22, 22);
+}
+.carouselFlechasDos {
+  color: rgb(242, 242, 242);
+}
+
+.imgIndexUno {
+  border-radius: 1.5rem;
+}
+
+.parrafoUno {
+  background-color: #d6baa1;
+  border-radius: 1.5rem;
+}
+
+.infoDeContactoIndex,
+.infoDeContactoMargins {
+  border: 1px black solid;
+  background-color: #d6baa1;
+  margin: 0 16px 0 16px;
+  line-height: 2rem;
+}
+.infoDeContactoIndex a,
+.infoDeContactoMargins a {
+  font-size: 1em;
+  display: block;
+  margin: 0 0 1rem 0;
+}
+
+.mainSN h1 {
+  font-size: 3em;
+  margin: 2rem 0 2rem 0;
+}
+.mainSN p {
+  font-size: 1.3em;
+  padding: 0 3rem 0 3rem;
+}
+.maintextSN {
+  margin: 0 0 5rem 0;
+}
+.mainContacto {
+  margin: 0 16px 2.7rem 16px;
+}
+.mainST {
+  background-color: #d6baa1;
+  border: 2px black solid;
+  border-radius: 2rem;
+}
+
+.formContacto {
+  background-color: #d6baa1;
+}
+
+.botonEnviar, .botonEnviar:hover {
+  background-color: rgba(38, 225, 5, 0.5019607843);
+  border: 1px black solid;
+}
+.botonEnviar:hover {
+  background-color: #20bc04;
+  transform: scale(110%);
+  transition: all 0.5s;
+}
+.botonRestablecer, .botonRestablecer:hover {
+  background-color: rgba(215, 5, 5, 0.5019607843);
+  border: 1px black solid;
+}
+.botonRestablecer:hover {
+  background-color: #be0505;
+  transform: scale(110%);
+  transition: all 0.5s;
+}
+.botonCerrar {
+  background-color: #264141;
+  color: rgb(242, 242, 242);
+  border-radius: 2px;
+  border: 1px transparent solid;
+  padding: 0.3rem 0.3rem 0.3rem 0.3rem;
+}
+.botonCerrar:hover {
+  background-color: #253e3e;
+}
+
+.ubicacionMainDivUno {
+  font-family: "Open Sans", sans-serif;
+}
+.ubicacionMainDivUno h1 {
+  font-size: 2.4em;
+  font-weight: bold;
+}
+.ubicacionMainDivUno p {
+  font-size: 1.3em;
+}
+
+footer {
+  background-color: #241818;
+}
+footer a {
+  color: #72f072 !important;
+}
+footer a:hover {
+  color: #72cf72;
+  transform: scale(110%);
+  transition: all 0.5s;
+}
+footer p {
+  color: rgb(242, 242, 242);
+}
+
+@media (max-width: 992px) {
+  .infoDeContactoMargins,
+  .parrafoUno,
+  .imgIndexUno,
+  .imgIndexDos,
+  .imgContacto,
+  .mainST {
+    margin: 16px 16px 0 16px;
+  }
+}
+@media (max-width: 462px) {
+  .infoDeContactoMargins {
+    margin: 16px 0 0 0;
+  }
+  .infoDeContactoMargins a {
+    font-size: 0.77em;
+  }
+}
+@media (max-width: 398px) {
+  .infoDeContactoIndex a {
+    font-size: 0.8em;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

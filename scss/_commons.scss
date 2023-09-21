@@ -1,0 +1,157 @@
+body {
+    background-image: $principalBG;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+
+.carousel {
+    @include margins(3rem, inherit, 3rem, inherit);
+    padding: 0;
+
+    &Sombra {
+        box-shadow: 0px 0px 25px 6px rgba(0, 0, 0, 0.64);
+        -webkit-box-shadow: 0px 0px 25px 6px rgba(0, 0, 0, 0.64);
+        -moz-box-shadow: 0px 0px 25px 6px rgba(0, 0, 0, 0.64);
+    }
+
+    &Flechas {
+        color: $black;
+
+        &Dos {
+            color: $white;
+        }
+    }
+}
+
+
+.imgIndexUno {
+    border-radius: $borderRadiusSm;
+}
+
+.parrafoUno {
+    background-color: $secondaryColor;
+    border-radius: $borderRadiusSm;
+}
+
+.infoDeContactoIndex,
+.infoDeContactoMargins {
+    border: $commonBorder;
+    background-color: $secondaryColor;
+    @include margins(0, 16px, 0, 16px);
+    line-height: 2rem;
+
+    a {
+        font-size: map-get($map: $fontSize, $key: 'Sm');
+        display: block;
+        @include margins(0, 0, 1rem, 0)
+    }
+
+}
+
+.main {
+    &SN {
+        h1 {
+            font-size: map-get($map: $fontSize, $key: 'Xl');
+            @include margins(2rem, 0, 2rem, 0);
+        }
+
+        p {
+            font-size: map-get($map: $fontSize, $key: 'Md');
+            @include paddings(0, 3rem, 0, 3rem)
+        }
+    }
+
+    &textSN {
+        @include margins(0, 0, 5rem, 0)
+    }
+
+    &Contacto {
+        @include margins(0, 16px, 2.7rem, 16px)
+    }
+
+    &ST {
+        background-color: $secondaryColor;
+        border: $heavierBorder;
+        border-radius: $borderRadiusLg;
+    }
+}
+
+.formContacto {
+    background-color: $secondaryColor;
+}
+
+.boton {
+    &Enviar {
+        background-color: #26e10580;
+        border: $commonBorder;
+
+        &:hover {
+            @extend .botonEnviar;
+            background-color: #20bc04;
+            transform: scale(110%);
+            transition: all 0.5s;
+        }
+    }
+
+    &Restablecer {
+        background-color: #d7050580;
+        border: $commonBorder;
+
+        &:hover {
+            @extend .botonRestablecer;
+            background-color: #be0505;
+            transform: scale(110%);
+            transition: all 0.5s;
+        }
+    }
+
+    &Cerrar {
+        background-color: #264141;
+        color: $white;
+        border-radius: 2px;
+        border: 1px transparent solid;
+        @include paddings(0.3rem, 0.3rem, 0.3rem, 0.3rem);
+
+        &:hover {
+            background-color: #253e3e;
+        }
+    }
+}
+
+.ubicacion {
+    &MainDivUno {
+        font-family: map-get($map: $fonts, $key: openSans);
+
+        h1 {
+            font-size: map-get($map: $fontSize, $key: L);
+            font-weight: bold;
+        }
+
+        p {
+            font-size: map-get($map: $fontSize, $key: Md);
+        }
+    }
+}
+
+footer {
+    background-color: $footerColor;
+
+    a {
+        color: #72f072 !important;
+
+        &:hover {
+            color: #72cf72;
+            transform: scale(110%);
+            transition: all 0.5s;
+        }
+    }
+
+    p {
+        color: $white;
+    }
+}

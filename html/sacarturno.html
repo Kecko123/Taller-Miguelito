@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taller Miguelito | Sacar Turno</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="shortcut icon" href="../media/Miguelito.webp">
+    <!-- SEO -->
+    <meta name="description"
+        content="Programa tu cita para servicios de mecánica rápida y confiable. ¡Obtén el servicio que tu vehículo merece, sin esperas innecesarias!">
+    <meta name="keywords"
+        content="taller miguelito ,taller mecánico, reparación de autos, mantenimiento de vehículos, servicio automotriz, cambio de aceite, frenos, neumáticos, afinamiento, diagnóstico de motor, mecánicos expertos, Villa Soldati, inspección de automóviles">
+    <meta name="author" content="Ezequiel Carusela">
+    <meta name="copyright" content="Propiedad de Ezequiel Carusela">
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand headerH1 font-rubik" href="#">
+                <img class="logo" src="../media/Miguelito.webp" alt="Logo">Sacar Turno</a>
+
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+
+            <div class="collapse navbar-collapse " id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./sobrenosotros.html">Sobre Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./sacarturno.html">Sacar Turno</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./ubicacion.html">Ubicación</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- MAIN FORM -->
+
+    <main class="mt-5 mb-3 container">
+        <form class="px-3 py-3 row  mainST">
+            <div class="mb-3 col-xl-6">
+                <label class="form-label font-robotoBold fs-5">Nombre</label>
+                <input type="text" class="form-control" placeholder="Ej: Pedro">
+            </div>
+
+
+            <div class="mb-3 col-xl-6">
+                <label class="form-label font-robotoBold fs-5">Apellido</label>
+                <input type="text" class="form-control" placeholder="Ej: Figueroa">
+            </div>
+
+
+            <div class="mb-3 col-xl-6">
+                <label class="form-label font-robotoBold fs-5">Telefono</label>
+                <input type="tel" class="form-control" placeholder="(Código de área) Número">
+            </div>
+
+
+            <div class="mb-3 col-xl-6">
+                <label class="form-label font-robotoBold fs-5">Email</label>
+                <input type="email" class="form-control" aria-describedby="emailHelp"
+                    placeholder="Ej: pedritofigueroa@ejemplo.com">
+            </div>
+
+            <div class="mb-3 col-xl-6">
+                <label class="form-label font-robotoBold fs-5">Marca</label>
+                <select class="form-select">
+                    <option selected>Elegir</option>
+                    <option value="1">Alfa Romeo</option>
+                    <option value="2">Audi</option>
+                    <option value="3">BMW</option>
+                    <option value="4">Citroen</option>
+                    <option value="5">Chevrolet</option>
+                    <option value="6">Fiat</option>
+                    <option value="7">Ford</option>
+                    <option value="8">Honda</option>
+                    <option value="9">Hyundai</option>
+                    <option value="10">KIA</option>
+                    <option value="11">Mercedes-Benz</option>
+                    <option value="12">Nissan</option>
+                    <option value="13">Peugeot</option>
+                    <option value="14">Renault</option>
+                    <option value="15">Toyota</option>
+                    <option value="16">Volkswagen</option>
+                    <option value="17">Volvo</option>
+                    <option value="18">Otro (Especificar en Modelo)</option>
+                </select>
+            </div>
+            <div class="mb-3 col-xl-6">
+                <label class="form-label font-robotoBold fs-5">Modelo</label>
+                <input type="text" class="form-control" placeholder="Especificar modelo del auto">
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label font-robotoBold fs-5">Motivo del turno</label>
+                <input type="text" class="form-control"
+                    placeholder="Ej: Escaneo, Cambio de bujía, Problemas en el motor , Otro tipo de falla (especificar abajo)">
+            </div>
+
+            <div class="mt-2 mb-3">
+                <label class="form-label font-robotoBold fs-5"> Detalles de la falla
+                    <small class="opacity-50">(opcional)</small>
+                </label>
+                <textarea class="form-control" placeholder="" cols="58" rows="8"></textarea>
+            </div>
+
+            <div class="mb-3 text-center">
+                <button class="btn botonEnviar btn-lg rounded-pill px-3" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal" type="button">Enviar</button>
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-sm">
+                        <div class="modal-content ">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">Turno Sacado Correctamente!</h1>
+                            </div>
+                            <div class="modal-body text-center">
+                                <button type="button" class="botonCerrar" data-bs-dismiss="modal">Cerrar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="btn botonRestablecer btn-lg rounded-pill px-3" type="reset">Borrar</button>
+            </div>
+        </form>
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="py-3">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <li class="nav-item"><a href="https://www.facebook.com/TallerMiguelito" target="_blank"
+                    class="nav-link px-2 ">Facebook</a></li>
+            <li class="nav-item"><a href="api.whatsapp.com/send?phone=541128054406" target="_blank"
+                    class="nav-link px-2 ">Whatsapp</a></li>
+            <li class="nav-item"><a href="https://www.instagram.com/tallermiguelito/" target="_blank"
+                    class="nav-link px-2 ">Instagram</a></li>
+        </ul>
+        <p class="text-center">Todos los derechos reservados a Ezequiel Carusela</p>
+    </footer>
+
+
+    <!-- BS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

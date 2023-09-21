@@ -1,0 +1,29 @@
+@media (max-width: 992px) {
+    .infoDeContactoMargins,
+    .parrafoUno,
+    .imgIndexUno,
+    .imgIndexDos,
+    .imgContacto,
+    .mainST {
+        @include margins (16px, 16px, 0, 16px);
+    }
+}
+
+@media (max-width: 462px) {
+    .infoDeContactoMargins {
+        @include margins (16px, 0, 0, 0);
+
+        a {
+            font-size: 0.77em;
+        }
+    }
+
+}
+
+@media (max-width: 398px) {
+    .infoDeContactoIndex {
+        a {
+            font-size: map-get($map: $fontSize, $key: XS);
+        }
+    }
+}
