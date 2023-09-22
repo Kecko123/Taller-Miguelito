@@ -22,6 +22,7 @@ header {
         color: $black;
         position: relative;
         font-family: map-get($map: $fonts, $key: roboto);
+        font-size: map-get($map: $fontSize, $key: Md);
 
         &::before {
             content: '';
@@ -48,7 +49,7 @@ header {
         }
     }
 }
-.headerH1 {
+.headerText {
     font-size: map-get($map: $fontSize, $key: header);
     
     &:hover{

@@ -3,9 +3,12 @@
     .parrafoUno,
     .imgIndexUno,
     .imgIndexDos,
-    .imgContacto,
     .mainST {
         @include margins (16px, 16px, 0, 16px);
+    } 
+
+    .imgContacto{
+        @include margins (16px, 0, 0, 0)
     }
 }
 
@@ -25,5 +28,11 @@
         a {
             font-size: map-get($map: $fontSize, $key: XS);
         }
+    }
+}
+
+@media (max-width: 408px) {
+    .headerText {
+        font-size: map-get($map: $fontSize, $key: headerMobile);
     }
 }

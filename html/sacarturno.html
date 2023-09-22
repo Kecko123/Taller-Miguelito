@@ -7,6 +7,7 @@
     <title>Taller Miguelito | Sacar Turno</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="../css/main.css">
     <link rel="shortcut icon" href="../media/Miguelito.webp">
     <!-- SEO -->
@@ -22,7 +23,7 @@
     <!-- HEADER -->
     <header class="navbar navbar-expand-lg">
         <div class="container-fluid">
-            <a class="navbar-brand headerH1 font-rubik" href="#">
+            <a class="navbar-brand headerText font-rubik" href="#">
                 <img class="logo" src="../media/Miguelito.webp" alt="Logo">Sacar Turno</a>
 
 
@@ -57,8 +58,10 @@
 
     <!-- MAIN FORM -->
 
-    <main class="mt-5 mb-3 container">
-        <form class="px-3 py-3 row  mainST">
+    <main class="mt-4 mb-3 container">
+        <h1 class="text-center mb-4 mainStH1">Rellena el formulario para sacar turno</h1>
+
+        <form class="px-3 py-3 row  mainStForm">
             <div class="mb-3 col-xl-6">
                 <label class="form-label font-robotoBold fs-5">Nombre</label>
                 <input type="text" class="form-control" placeholder="Ej: Pedro">
@@ -133,7 +136,7 @@
                     <div class="modal-dialog modal-sm">
                         <div class="modal-content ">
                             <div class="modal-header">
-                                <h1 class="modal-title fs-5" id="exampleModalLabel">Turno Sacado Correctamente!</h1>
+                                <h2 class="modal-title fs-5" id="exampleModalLabel">Turno Sacado Correctamente!</h2>
                             </div>
                             <div class="modal-body text-center">
                                 <button type="button" class="botonCerrar" data-bs-dismiss="modal">Cerrar</button>
@@ -151,12 +154,10 @@
     <!-- FOOTER -->
     <footer class="py-3">
         <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-            <li class="nav-item"><a href="https://www.facebook.com/TallerMiguelito" target="_blank"
-                    class="nav-link px-2 ">Facebook</a></li>
+            <li class="nav-item"><a href="../404.html" class="nav-link px-2 ">Facebook</a></li>
             <li class="nav-item"><a href="api.whatsapp.com/send?phone=541128054406" target="_blank"
                     class="nav-link px-2 ">Whatsapp</a></li>
-            <li class="nav-item"><a href="https://www.instagram.com/tallermiguelito/" target="_blank"
-                    class="nav-link px-2 ">Instagram</a></li>
+            <li class="nav-item"><a href="../404.html" class="nav-link px-2 ">Instagram</a></li>
         </ul>
         <p class="text-center">Todos los derechos reservados a Ezequiel Carusela</p>
     </footer>

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Dai+Banna+SIL:wght@600&family=Open+Sans&family=Roboto:wght@300&family=Rubik&display=swap");
 .font-openSans {
   font-family: "Open Sans", sans-serif;
@@ -41,6 +42,7 @@ header .nav-link {
   color: rgb(22, 22, 22);
   position: relative;
   font-family: "Roboto", sans-serif;
+  font-size: 1.3em;
 }
 header .nav-link::before {
   content: "";
@@ -64,10 +66,10 @@ header .nav-link:hover::before {
   transform: scaleX(1);
 }
 
-.headerH1 {
-  font-size: 2.2em;
+.headerText {
+  font-size: 2em;
 }
-.headerH1:hover {
+.headerText:hover {
   transform: scale(110%);
   transition: all 0.5s;
 }
@@ -96,8 +98,49 @@ a {
   color: rgb(242, 242, 242);
 }
 
+.error404Main {
+  background-image: url(../media/35306345-mecánico-de-automóviles-de-dibujos-animados-con-el-coche-roto.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+.error404Main h1 {
+  font-size: 3em;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #000000;
+  -webkit-text-fill-color: #e72323;
+  text-shadow: 4px 1px 6px rgba(0, 0, 0, 0.36);
+}
+.error404Main svg {
+  color: #e72323;
+}
+
+.btnCenter {
+  display: flex;
+  justify-content: center;
+}
+.btn404 {
+  border: 2px black solid;
+  background-color: rgb(255, 68, 0);
+  color: rgb(242, 242, 242);
+  font-size: 1.3em;
+}
+.btn404:hover {
+  background-color: rgb(246, 160, 0);
+  transform: scale(120%);
+  transition: all 1s;
+}
+
 .imgIndexUno {
   border-radius: 1.5rem;
+}
+
+.commonH1 {
+  color: rgb(22, 22, 22);
+  font-size: 3em;
+  text-shadow: 4px 3px 2px rgba(0, 0, 0, 0.2);
+  text-decoration: underline;
 }
 
 .parrafoUno {
@@ -127,16 +170,25 @@ a {
   font-size: 1.3em;
   padding: 0 3rem 0 3rem;
 }
+.mainSN h2 {
+  font-size: 2.4em;
+}
 .maintextSN {
   margin: 0 0 5rem 0;
 }
 .mainContacto {
   margin: 0 16px 2.7rem 16px;
 }
-.mainST {
+.mainStForm {
   background-color: #d6baa1;
   border: 2px black solid;
   border-radius: 2rem;
+}
+.mainStH1 {
+  color: rgb(22, 22, 22);
+  font-size: 2.4em;
+  text-shadow: 4px 3px 2px rgba(0, 0, 0, 0.2);
+  text-decoration: underline;
 }
 
 .formContacto {
@@ -203,9 +255,11 @@ footer p {
   .parrafoUno,
   .imgIndexUno,
   .imgIndexDos,
-  .imgContacto,
   .mainST {
     margin: 16px 16px 0 16px;
+  }
+  .imgContacto {
+    margin: 16px 0 0 0;
   }
 }
 @media (max-width: 462px) {
@@ -219,6 +273,11 @@ footer p {
 @media (max-width: 398px) {
   .infoDeContactoIndex a {
     font-size: 0.8em;
+  }
+}
+@media (max-width: 408px) {
+  .headerText {
+    font-size: 1.6em;
   }
 }
 
